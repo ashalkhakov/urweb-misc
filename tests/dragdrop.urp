@@ -1,0 +1,4 @@
+rewrite all Dragdrop/*
+clientOnly Dragdrop.draggable_div
+
+dragdrop
