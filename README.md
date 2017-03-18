@@ -7,7 +7,7 @@ useful in its current state.
 
 This is a toy relational algebra query evaluator, embedded in
 Ur/Web. Please find the test case in `tests/rel.ur`, or view the
-[result](tests/rel.html).
+[result](https://htmlpreview.github.io/?https://github.com/ashalkhakov/urweb-misc/blob/master/tests/rel.html).
 
 Features:
 
