@@ -6,7 +6,8 @@ useful in its current state.
 ## `relation.urs`
 
 This is a toy relational algebra query evaluator, embedded in
-Ur/Web. Please find the test case in `tests/rel.ur`.
+Ur/Web. Please find the test case in `tests/rel.ur`, or view the
+[result](tests/rel.html).
 
 Features:
 

@@ -1,5 +1,7 @@
 html5
 rewrite all Rel/*
 library ../src/relation
+allow url rel.css
+file /rel.css rel.css
 
 rel

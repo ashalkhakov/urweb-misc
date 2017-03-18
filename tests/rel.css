@@ -1,0 +1,12 @@
+table {width:auto;border:1px solid black;border-collapse:collapse;margin-top: 10px;}
+th, td {border:1px solid #777;}
+   figure {
+    display: inline-block; /* Выстраиваем по горизонтали */
+    /* background: rgba(111, 116, 171, 0); */ /* Цвет фона */
+    padding: 10px; /* Поля */
+    margin: 0 1em 0 0; /* Отступ справа */
+    vertical-align: top; /* Выравниваем по верхнему краю */
+   }
+   figcaption { 
+    text-align: center; /* Выравниваем по центру */
+   }   

@@ -34,42 +34,40 @@ A<B iff snd A < snd B
  and also {[lt {A=4, B=5} {A=4, B=6}]} and {[gt {A=4,B=5} {A=4,B=6}]}
  and also {[lt {A=4,B=4} {A=5,B=4}]} and {[gt {A=4,B=4} {A=5,B=4}]}*)
 	return <xml>
+	  <head>
+	    <title>Relation algebra</title>
+	    <link rel="stylesheet" href="rel.css"/>
+	  </head>
 	  <body>
-	    <p>Relation xs =</p>
-	    {Relation.tablize_rel
-		  {A="A", B="B"}
-		  xs}
+	    <figure>
+	      <figcaption>xs</figcaption>
+	      {Relation.tablize_rel {A="A", B="B"} xs}
+	    </figure>
 
-	    <p>project<sub>A</sub> xs</p>
-	    {Relation.tablize_rel
-		  {A="A"}
-		  ys}
+	    <figure>
+	      <figcaption>project<sub>A</sub> xs</figcaption>
+	      {Relation.tablize_rel {A="A"} ys}
+	    </figure>
 
-	    <p>while we also have:</p>
-	    {[oy {A=4} {A=4}]}<br/>
-	    {[oy {A=4} {A=5}]}<br/>
-	    {[oy {A=5} {A=6}]}<br/>
-	    <br/>
+	    <figure>
+	      <figcaption>zs</figcaption>
+	      {Relation.tablize_rel {A="A", C="C", F="F"} zs}
+	    </figure>
 
-	    <p>Relation zs =</p>
-	    {Relation.tablize_rel
-		  {A="A", C="C", F="F"}
-		  zs}
-	    
-	    <p>join xs zs</p>
-	    {Relation.tablize_rel
-		  {A="A", B="B", C="C", F="F"}
-		  rs}
+	    <figure>
+	      <figcaption>join xs zs</figcaption>
+	      {Relation.tablize_rel {A="A", B="B", C="C", F="F"} rs}
+	    </figure>
 
-	    <p>project<sub>B</sub>xs</p>
-	    {Relation.tablize_rel
-		  {B="B"}
-		  xs1}
-	    
-	    <p>xs * zs</p>
-	    {Relation.tablize_rel
-		  {A="A",B="B",C="C",F="F"}
-		  rs1}
+	    <figure>
+	      <figcaption>project<sub>B</sub>xs</figcaption>
+	      {Relation.tablize_rel {B="B"} xs1}
+	    </figure>
+
+	    <figure>
+	      <figcaption>times xs zs</figcaption>
+	      {Relation.tablize_rel {A="A", B="B", C="C", F="F"} rs1}
+	    </figure>
 
             </body>
 	</xml>
